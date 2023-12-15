@@ -1,0 +1,100 @@
+// ==========================================================================
+// Footer Styling
+// ==========================================================================
+
+footer {
+    background-color: #323544;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    width: 250px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logo-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.follow {
+    text-transform: uppercase;
+}
+
+.social-icon-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .social-block .social-icon-box a {
+    text-decoration: none;
+}
+
+.social-icon-box a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 70px;
+}
+
+.facebook-icon:hover {
+    background-color: #3b5998;
+}
+
+.linked-in-icon:hover {
+    background-color: #0077b5;
+}
+
+.twitter-icon:hover {
+    background-color: #00aced;
+}
+
+.instagram-icon:hover {
+    background-color: #d93175;
+}
+
+
+.social-icon {
+    font-size: 1.5em;
+    padding: 10px 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #212330;
+}
+
+.footer-links-box h3 {
+    font-weight: 400;
+    margin-top: 40px;
+    font-size: .95rem;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-links li {
+    font-weight: 300;
+    font-size: .8125rem;
+    line-height: 1rem;
+    padding-bottom: 5px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-footer {
+    background-color: #212330;
+    padding: 15px;
+}
+
+.sub-footer p {
+    margin: 0;
+    font-size: .85rem;
+    line-height: normal;
+}

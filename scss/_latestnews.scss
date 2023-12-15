@@ -1,0 +1,190 @@
+// ==========================================================================
+// News Section Styling
+// ==========================================================================
+
+.news-title-card {
+    color: #333645;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+.news-card {
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    color: #333645;
+    font-size: .85rem;
+    margin-bottom: 30px;
+    position: relative;
+    transition: .5s ease;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, .1);
+}
+
+.news-card:hover {
+    top: -10px;
+    transition: .5s ease;
+}
+
+
+.news-card p {
+    color: #666;
+    font-size: .85rem;
+    line-height: 1.4rem;
+}
+
+
+.news-card .read-more {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.poster-info {
+    border-top: 1px solid lightgrey;
+    padding-top: 25px;
+}
+
+.read-time {
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: rgba(51, 54, 69, .5);
+}
+
+.news-card-content {
+    padding: 20px;
+}
+
+.news-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.logo-small {
+    float: left;
+    margin-right: 15px;
+}
+
+
+.news-card .poster-info .logo-text-bold {
+    font-weight: 600;
+    font-size: .9rem;
+    color: #333645;
+    margin-bottom: 0px;
+}
+
+.news-section .container {
+    display: flex;
+    flex-direction: column;
+}
+
+// ==========================================================================
+// News Card Colors Styling
+// ==========================================================================
+.news-card h3 {
+    color: #4183d7;
+    padding-bottom: 20px;
+}
+
+.news-2 h3 {
+    color: #d64541
+}
+
+// ==========================================================================
+// Client Image Styling
+// ==========================================================================
+
+.client-image-block {
+    margin-top: 50px;
+}
+
+.client-image-sleeve {
+    display: flex;
+    overflow-x: clip;
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+
+.client-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 20px;
+    height: 70px;
+    width: 100%;
+}
+
+.client-image-container picture {
+    align-items: center;
+}
+
+
+.client-image-container img {
+    width: auto;
+    height: auto;
+    max-height: 70px;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.hover-box {
+    position: absolute;
+    bottom: 100%;
+    left: -200px;
+    right: -200px;
+    z-index: 4;
+    display: none;
+    background-color: #333645;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto 50px;
+}
+
+.client-image-container:hover .hover-box:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    z-index: 90;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: translateX(-50%);
+    border-width: 35px 36px 0;
+    border-color: #333645 transparent transparent;
+}
+
+.hover-box h3 {
+    font-size: 1.125rem;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.hover-box h3.no-pad {
+    padding-bottom: 0;
+}
+
+.hover-box p {
+    font-size: .8125rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.hover-btn {
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.client-image-container:hover .hover-box,
+.client-image-container img:hover .hover-box {
+    display: block;
+}

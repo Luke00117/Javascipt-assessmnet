@@ -1,0 +1,104 @@
+// ==========================================================================
+// Banner Styling
+// ==========================================================================
+
+.banner {
+    position: relative;
+    height: 550px;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.banner-img {
+    height: 550px;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(to right, black, grey);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.banner-content {
+    z-index: 3;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    padding: 3.75rem 0;
+}
+
+.banner-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.banner-text h1 {
+    padding-right: 20px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0 0 1.25rem 0;
+}
+
+.banner-text p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+
+// ==========================================================================
+// Sliding Banner Styling
+// ==========================================================================
+
+.banner-slider {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    width: 700vw;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.slides input {
+    display: none;
+}
+
+.manual-nav {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    margin-top: -60px;
+    z-index: 4
+}
